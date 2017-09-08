@@ -115,6 +115,8 @@
                   <a href="https://arxiv.org/abs/1612.02590" target="_blank">arXiv:1612.02590
                   </a>
                 </h5>
+                <br>
+				<p>IN PROGRESS.</p>
             </div>
           </div>
           <hr>
@@ -144,7 +146,7 @@
                     <p>We introduce a localization system for the opening of railway oil tank wagon, which consists of industrial camera, lens, LED lighter, industrial PC, and IO module. In addition, we propose a shape matching localization method, which can overcome the adverse effects caused by illumination changes, various types of railway oil tank wagon, and various poses of camera. The shape template is extracted from a standard opening image using edge detection and shape fitting methods, which can help avoid the randomness of template selection. An optimized similarity measure is exploited to avoid the edge extraction, so that the threshold setting of edge extraction can be avoided. We also exploit scalable template in addition to find various types opening and exploit image pyramid during shape matching procedure to gain a speedup. The indoor and outdoor experiments show that the localization system and the proposed method fully meet the requirements of practical industrial applications.</p>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="bibtex1">
-                    <p>@ARTICLE{zkYan_Sensor, <br>
+                    <p>@ARTICLE{Yan_sensor_2016, <br>
 						author={X. Xiang and Z. Yan and L. Zhang and H. Tang and Y. Qiao}, <br>
 						journal={IEEE Sensors Journal}, <br>
 						title={A System and Vision Localization Method for the Opening of Railway Oil Tank Wagon Based on Shape Matching}, <br>
@@ -185,7 +187,7 @@
                     <p>We present a modified joint trilateral filter based method for depth map refinement. Seeded region growing algorithm and Euclidean distance transform(EDT) are utilized for error pixels extraction. With the error information wiped out, a joint trilateral filter method is employed as a hole filling strategy to fill the error regions. Compared to the basic bilateral filter method, structural similarity index(SSIM) is added as the third lateral, while a threshold and an aberration condition are involved for modification to protect the edges and improve the confidence of the filling values. Both qualitative analysis and quantitative analysis are shown to testify the performance. Comparisons between our method and the other popular methods are provided.</p>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="bibtex2">
-                    <p>@INPROCEEDINGS{zkYan_WCICA, <br>
+                    <p>@INPROCEEDINGS{Yan_wcica_2016, <br>
 						author={X. Xiang and Z. Yan and C. Nan and W. Xu and L. Zhang}, <br>
 						booktitle={2016 12th World Congress on Intelligent Control and Automation (WCICA)}, <br>
 						title={A modified joint trilateral filter based depth map refinement method}, <br>
@@ -212,31 +214,80 @@
           </div>
           <!-- UAV -->
           <div class="row">
-            <div class="col-md-2">
-              <img src="images/intro-img1.jpg" class="img-responsive">
+            <div class="col-xs-6 col-md-4">
+              <img src="images/uav.jpg" class="img-responsive">
             </div>
-            <div class="col-md-10">
-                <h4>Intelligent Image Recognition System with UAV</h4>
-                <p>Sample video: &nbsp;<a href="" title="UAV" target="_blank"><i class="fa fa-youtube-play" style="color:red"></i></a></p>
+            <div class="col-xs-12 col-md-8">
+                <h4>Intelligent Traffic Monitoring System with a UAV</h4>
                 <h5>Collaborator: Mingliang Zhai</h5>
-                <li>Achieving real-time automotive/pedestrian detection and tracking with RGB stream captured from a UAV</li>
-                <li>Language: C++, OpenCV library</li>
-                <li>Operating System: Window</li>
-            </div>
+                <br>
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation">
+                    <a href="#video1" aria-controls="video1" data-toggle="tab">Sample Video</a>  
+                  </li>
+                  <li role="presentation" class="active">
+                    <a href="#func1" aria-controls="func1" data-toggle="tab">Function</a>  
+                  </li>
+                  <li role="presentation">
+                    <a href="#imple1" aria-controls="imple1" data-toggle="tab">Implementation details</a>  
+                  </li>
+                </ul>
+                <!-- <p>Sample video: &nbsp;<a href="" title="UAV" target="_blank"><i class="fa fa-youtube-play"  style="color:red"></i></a></p>-->
+                <div class="tab-content">
+                	<br>
+                	<div role="tabpanel" class="tab-pane" id="video1">
+                		<iframe frameborder="0" width="560" height="315" src="https://v.qq.com/iframe/player.html?vid=e0546v26zma&tiny=0&auto=0" allowfullscreen></iframe>
+                	</div>
+                	<div role="tabpanel" class="tab-pane active" id="func1">
+                		<li>Aerial Surveillance</li>
+                		<li>Real-time automotive/pedestrian detection and tracking</li>
+                		<li>Traffic flow computation</li>
+                	</div>
+                	<div role="tabpanel" class="tab-pane" id="imple1">
+                		<li>Detection: ViBe &nbsp; &nbsp;Tracking: KCF Tracking</li>
+                		<li>Language: C++, OpenCV library</li>
+                		<li>Operating System: Window</li>
+                	</div>
+            	</div>
+			  </div>
           </div>
           <hr>
           <!-- Gas Station -->
           <div class="row">
-            <div class="col-md-2">
-              <img src="images/intro-img1.jpg" class="img-responsive">
+            <div class="col-xs-6 col-md-4">
+              <img src="images/gasStation.jpg" class="img-responsive">
             </div>
-            <div class="col-md-10">
-                <h4>Intelligent Monitoring System for Gas Station</h4>
-                <p>Sample video: &nbsp;<a href="" title="Gas Station" target="_blank"><i class="fa fa-youtube-play" style="color:red"></i></a></p>
+            <div class="col-xs-12 col-md-8">
+                <h4>Intelligent Monitoring System for Gas Stations</h4>
                 <h5>Collaborator: Jiajia Li</h5>
-                <li>Achieve real-time pedestrian detection and tracking with RGB-D cameras</li>
-                <li>Language: C++, OpenCV library</li>
-                <li>Operating System: Window</li>
+                <br>
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation">
+                    <a href="#video2" aria-controls="video2" data-toggle="tab">Sample Video</a>  
+                  </li>
+                  <li role="presentation" class="active">
+                    <a href="#func2" aria-controls="func2" data-toggle="tab">Function</a>  
+                  </li>
+                  <li role="presentation">
+                    <a href="#imple2" aria-controls="imple2" data-toggle="tab">Implementation details</a>  
+                  </li>
+                </ul>
+                <div class="tab-content">
+                	<br>
+                	<div role="tabpanel" class="tab-pane" id="video2">
+                		<iframe frameborder="0" width="560" height="315" src="https://v.qq.com/iframe/player.html?vid=h0547hjub89&tiny=0&auto=0" allowfullscreen></iframe>
+                	</div>
+                	<div role="tabpanel" class="tab-pane active" id="func2">
+                		<li>A monitoring system for convenience stores</li>
+                		<li>Real-time pedestrian detection/tracking/in&amp;out counting</li>
+                		<li>The number of customers at the counter waiting lines and the waiting time for each customer</li>
+                	</div>
+                	<div role="tabpanel" class="tab-pane" id="imple2">
+                		<li>Sensor: RGB-D camera (Microsoft Kinect/Asus Xtion)</li>
+                		<li>Language: C++, OpenCV library</li>
+                		<li>Operating System: Window</li>
+                	</div>
+            	</div>
             </div>
           </div>
         </div>
@@ -274,6 +325,7 @@
 </section>
 <!-- work section -->
 <section id="works" class="works section">
+  <h3 class="text-center">Portfolio</h3>
   <div class="container-fluid">
     <div class="row no-gutter">
       <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="images/work-1.jpg" title="Graphic Design" class="work-box"> <img src="images/work-1.jpg" alt="">
