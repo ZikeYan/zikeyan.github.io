@@ -1,571 +1,449 @@
-<!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zike Yan 颜子轲</title>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="all">
+    <meta content="en_EN" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="https://zikeyan.github.io/" property="og:url">
+    <meta content="Zike Yan" property="og:title">
+    <meta content="Zike Yan - Home page" property="og:description">
 
-    <!-- Meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Zike Yan">
-	<meta name="keywords" content="Zike Yan">
-	<meta name="author" content="Zike Yan">
-
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Styles -->
-    <style>
-          body {
-            font-family: Roboto, 'sans-serif';
-            font-size: 16px;
-            background-color: #FFFFFF;
-            color: #4F6071;
-          }
-          h1 {
-              font-weight: 300;
-              font-size: 2rem;
-          }
-          #header {
-            background-color: #f4f4f4;
-            /*background-color: #FFFFFF;*/
-            display: flex;
-            align-items: flex-end;
-            padding-top:60px;
-            padding-bottom:60px;
-          }
-          #footer {
-            background-color: #FFFFFF;
-            padding:60px;
-          }
-          #portrait {
-            border: 3px solid white;
-          }
-          #header-text {
-            margin-top: 60px;
-            margin-left: 220px;
-          }
-          #header-text-name {
-            font-size: 40px;
-          }
-          #header-text-title {
-              font-size: 17px;
-          }
-          #header-text-affiliation {
-              font-size: 17px;
-              margin-top: 10px;
-          }
-          #header-text-email {
-            margin-top: 10px;
-            font-size: 17px;
-            font-style: italic;
-          }
-          .header-text-desc {
-            font-size: 20px;
-          }
-          .vspace-top {
-            margin-top: 30px;
-          }
-          .vspace-top-news {
-              margin-top: 15px;
-          }
-          .paper-image {
-            width: 150px;
-          }
-          .news-date {
-              font-weight: bold;
-          }
-          .paper-title {
-            font-weight: bold;
-          }
-          .paper-authors {
-            font-style: italic;
-          }
-    </style>
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <meta name="twitter:site" content="@zike__Yan">
+    <meta name="twitter:description" content="Zike Yan - Home page">
+    <!-- <meta name="twitter:image:src" content="assets/figures/clarity.png"> -->
+    
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main_free.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="clarity/clarity.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
+    <link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            "HTML-CSS": {
+              scale: 95,
+              fonts: ["Gyre-Pagella"],
+              imageFont: null,
+              undefinedFamily: "'Arial Unicode MS', cmbright"
+            },
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+              }
+          });
+    </script>
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id='header'>
-        <div class='container'>
-            <div class='row'>
-                <div class="col-sm-3 offset-sm-1">
-                    <img src='images/portrait.jpg' class='img-fluid' id='portrait'>
+    <!-- Menu -->
+    <div class="nav-bar" id="nav-bar">
+        <div class="container">
+            <div class="nav-container slide-in first" id="slider">
+                <div class="menu">
+                        <a href="#" onclick="toggle()">Home</a>
+                        <a href="#projects" onclick="toggle()">Projects</a>
+                        <a href="#publications" onclick="toggle()">Publications</a>
+                        <a href="#about" onclick="toggle()">About</a>
                 </div>
-
-                <div class="col">
-                  <div id='header-text-name'>
-                      Zike Yan (颜子轲)
-                  </div>
-                  <div id='header-text-email'>
-                    <p>yanzike (at) air (dot) tsinghua (dot) edu (dot) cn</p>
-                        <p> zike (dot) yan (at) pku (dot) edu (dot) cn </p>
-                  </div>
-                  <div>
-                    <a href="https://github.com/ZikeYan" target="_blank">[GitHub]</a>
-                    <a href="https://scholar.google.com/citations?user=Rawfmp4AAAAJ&hl=en" target="_blank">[Google Scholar]</a>
-                    <a href="https://www.linkedin.com/in/子轲-颜-090420104" target="_blank">[LinkedIn]</a>
-					<a href="https://twitter.com/zike__Yan" target="_blank">[Twitter]</a>
-                  </div>
-				  <br>
-				  <br>
-				  <div id='services'>
-                      Academic Services:
-					  <br>
-					  <small>
-					  <li> Conference reviewer: CVPR, ICCV, ECCV, ICLR, ICRA, IROS, 3DV, etc. </li>
-					  <li> Journal reviewer: IJCV; TVCG; TIV; RA-L </li>
-					  <li> Associate editor: IROS</li>
-				      </small>
-                  </div>
-
+            </div>
+    
+            <div class="nav-container-small">
+                <div class="menu-bar">
+                    <button class="menu-default" onclick="toggle()">
+                            <svg viewBox="0 0 64 48">
+                                <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                            </svg>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class='container'>
-        <div class='row vspace-top'>
-            <div class='col offset-sm-1'>
-				<h1>About</h1>
+    <script>
+        window.addEventListener('load', function() {
+            var navContainer = document.querySelector('div.nav-bar');
+            var blogTitles = document.querySelectorAll('div.blog-title');
+            var news = document.querySelector('div.news');
+            var navHeight = navContainer.offsetHeight;
+    
+            blogTitles.forEach(function(blogTitle) {
+                blogTitle.style.paddingTop = navHeight + 'px';
+            });
+            news.style.paddingBottom = 0.3*navHeight + 'px';
+        });
+    </script>
+    <!-- Introduction Page -->
+    <div class="container">
+        <div class="blog-title"  id="intro">
+            <h1>Zike Yan (颜子轲)</h1>
+            <div class="blog-intro">
+                <p><img class="profile-picture" src="./assets/figures/portrait.jpg"></p>
                 <p>
-                    I am currently a research fellow at Institute for AI Industry Research (AIR) at Tsinghua University, working with Dr. Guyue Zhou and Prof. <a href="https://en.wikipedia.org/wiki/Ya-Qin_Zhang"> Yaqin Zhang</a>.
-					Prior to that, I obtained my Ph.D Degree from Peking University in 2023, advised by Prof. <span class="text-warning"><a href="http://www.cis.pku.edu.cn/vision/Visual&Robot/people/zha/">Hongbin Zha</a></span>.
-					<br>
-					My research interests include <strong>online neural field construction</strong> for vision/graphics and <strong>neural field based active vision</strong> for robotics. The major focus is to best explore and exploit the expressive power of implicit neural representation for spatial intelligence and realistic simulation.
-                </p>
-				
-				<h1>News</h1>
-                <p>
-                    [Jul 2024] Two papers accepted to ECCV!<br>
-					[Jul 2024] Two papers accepted to IROS!<br>
-					[May 2024] I served as an Associate Editor at <a href="https://iros2024-abudhabi.org/" target="_blank">IROS 2024</a>.<br>
-					[Feb 2024] One paper accepted to CVPR!<br>
-                </p>
-
-
-                <div class='vspace-top'>
-                    <h1>Publications</h1>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/iros2024.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Learn to Memorize and to Forget: A Continual Learning Perspective of Dynamic SLAM
-                        </div>
-                        <div class='paper-desc'>
-                            ECCV 2024
-                        </div>
-                        <div class='paper-authors'>
-                            Baicheng Li, <strong><u>Zike Yan</u></strong>, Dong Wu, Hanqing Jiang, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-							<a target="_blank">[Project page]</a>
-                            <a target="_blank">[Paper]</a>
-							<a target="_blank">[Code]</a>
-<!--
-							<a href="javascript:toggle8()">[Cite]</a>
-							<script type="text/javascript">
-              					function toggle8() {
-  									var x = document.getElementById("bib8");
-  									if (x.style.display === "none") {
-    									x.style.display = "block";
-  									} else {
-    									x.style.display = "none";
-  									}
-								}
-              				</script>
-              				<div id="bib8" style="display: none;">
-              					<pre><code>@inproceedings{Yan2023iccv,
-                  title={Active Neural Mapping at Scale},
-                  author={Kuang, Zijia and Yan, Zike and Zhao, Hao and Zhou, Guyue and Zha, Hongbin},
-                  booktitle={IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)},
-                  year={2024}}
-								</code></pre>
-							</div>
--->
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/iros2024.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Structured-NeRF: Hierarchical Scene Graph with Neural Representation
-                        </div>
-                        <div class='paper-desc'>
-                            ECCV 2024
-                        </div>
-                        <div class='paper-authors'>
-                            Zhide Zhong*, Jiakai Cao*, Songen Gu, Sirui Xie, Liyi Luo, Hao Zhao, Guyue Zhou, Haoang Li, <strong><u>Zike Yan</u></strong>
-                        </div>
-                        <div>
-							<a target="_blank">[Project page]</a>
-                            <a target="_blank">[Paper]</a>
-							<a target="_blank">[Code]</a>
-<!--
-							<a href="javascript:toggle8()">[Cite]</a>
-							<script type="text/javascript">
-              					function toggle8() {
-  									var x = document.getElementById("bib8");
-  									if (x.style.display === "none") {
-    									x.style.display = "block";
-  									} else {
-    									x.style.display = "none";
-  									}
-								}
-              				</script>
-              				<div id="bib8" style="display: none;">
-              					<pre><code>@inproceedings{Yan2023iccv,
-                  title={Active Neural Mapping at Scale},
-                  author={Kuang, Zijia and Yan, Zike and Zhao, Hao and Zhou, Guyue and Zha, Hongbin},
-                  booktitle={IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)},
-                  year={2024}}
-								</code></pre>
-							</div>
--->
-                        </div>
-                    </div>
-                </div>
-
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/iros2024.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Active Neural Mapping at Scale
-                        </div>
-                        <div class='paper-desc'>
-                            IROS 2024
-                        </div>
-                        <div class='paper-authors'>
-                            Zijia Kuang, <strong><u>Zike Yan</u></strong>, Hao Zhao, Guyue Zhou, Hongbin Zha
-                        </div>
-                        <div>
-							<a target="_blank">[Project page]</a>
-                            <a target="_blank">[Paper]</a>
-							<a target="_blank">[Code]</a>
-<!--
-							<a href="javascript:toggle8()">[Cite]</a>
-							<script type="text/javascript">
-              					function toggle8() {
-  									var x = document.getElementById("bib8");
-  									if (x.style.display === "none") {
-    									x.style.display = "block";
-  									} else {
-    									x.style.display = "none";
-  									}
-								}
-              				</script>
-              				<div id="bib8" style="display: none;">
-              					<pre><code>@inproceedings{Yan2023iccv,
-                  title={Active Neural Mapping at Scale},
-                  author={Kuang, Zijia and Yan, Zike and Zhao, Hao and Zhou, Guyue and Zha, Hongbin},
-                  booktitle={IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)},
-                  year={2024}}
-								</code></pre>
-							</div>
--->
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/iros2024.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            PanoRecon: Real-Time Panoptic 3D Reconstruction from Monocular Video
-                        </div>
-                        <div class='paper-desc'>
-                            CVPR 2024
-                        </div>
-                        <div class='paper-authors'>
-                            Dong Wu, <strong>Zike Yan</strong>, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-							<a target="_blank">[Project page]</a>
-                            <a target="_blank">[Paper]</a>
-							<a target="_blank">[Code]</a>
-<!--
-							<a href="javascript:toggle8()">[Cite]</a>
-							<script type="text/javascript">
-              					function toggle8() {
-  									var x = document.getElementById("bib8");
-  									if (x.style.display === "none") {
-    									x.style.display = "block";
-  									} else {
-    									x.style.display = "none";
-  									}
-								}
-              				</script>
-              				<div id="bib8" style="display: none;">
-              					<pre><code>@inproceedings{Yan2023iccv,
-                  title={Active Neural Mapping at Scale},
-                  author={Kuang, Zijia and Yan, Zike and Zhao, Hao and Zhou, Guyue and Zha, Hongbin},
-                  booktitle={IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)},
-                  year={2024}}
-								</code></pre>
-							</div>
--->
-                        </div>
-                    </div>
-                </div>
-				
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/iccv2023.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Active Neural Mapping
-                        </div>
-                        <div class='paper-desc'>
-                            ICCV 2023
-                        </div>
-                        <div class='paper-authors'>
-                            <strong>Zike Yan</strong>, Haoxiang Yang, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-							<a href="active-INR/index.html" target="_blank">[Project page]</a>
-                            <a href="https://arxiv.org/abs/2308.16246" target="_blank">[Paper]</a>
-							<a href="https://github.com/ZikeYan/activeINR" target="_blank">[Code]</a>
-<!--
-							<a href="javascript:toggle8()">[Cite]</a>
-							<script type="text/javascript">
-              					function toggle8() {
-  									var x = document.getElementById("bib8");
-  									if (x.style.display === "none") {
-    									x.style.display = "block";
-  									} else {
-    									x.style.display = "none";
-  									}
-								}
-              				</script>
-              				<div id="bib8" style="display: none;">
-              					<pre><code>@inproceedings{Yan2023iccv,
-                  title={Active Neural Mapping},
-                  author={Yan, Zike and Yang, Haoxiang and Zha, Hongbin},
-                  booktitle={Intl. Conf. on Computer Vision (ICCV)},
-                  year={2023}}
-								</code></pre>
-							</div>
--->
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/cicai2023.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            MARS: An Instance-aware, Modular and Realistic Simulator for Autonomous Driving
-                        </div>
-                        <div class='paper-desc'>
-                            CICAI 2023 (Best Paper Runner-up)
-                        </div>
-                        <div class='paper-authors'>
-                            Zirui Wu, Tianyu Liu, Liyi Luo, Zhide Zhong, Jianteng Chen, Hongmin Xiao, Chao Hou, Haozhe Lou, Yuantao Chen, Runyi Yang, Yuxin Huang, Xiaoyu Ye, <strong>Zike Yan</strong>, Yongliang Shi, Yiyi Liao, Hao Zhao
-                        </div>
-                        <div>
-                            <a href="https://open-air-sun.github.io/mars/" target="_blank">[Project page]</a>
-                            <a href="https://arxiv.org/abs/2307.15058" target="_blank">[Paper]</a>
-							<a href="https://github.com/OPEN-AIR-SUN/mars" target="_blank">[Code]</a>
-							
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <div>
-                        	<img src='videos/ral2022.png' class='img-fluid' width="100%">
-                    	</div>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Visual-Inertial Odometry based on Kinematic Constraints in IMU Frames
-                        </div>
-                        <div class='paper-desc'>
-                            IEEE RA-L 2022
-                        </div>
-                        <div class='paper-authors'>
-                            Xin Wang, Yuqi Pan, <strong>Zike Yan</strong>, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-                            <a href="https://ieeexplore.ieee.org/abstract/document/9770379/" target="_blank">[Paper]</a>
-							
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/iccv2021.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Continual Neural Mapping: Learning an Implicit Scene Representation from Sequential Observations
-                        </div>
-                        <div class='paper-desc'>
-                            ICCV 2021
-                        </div>
-                        <div class='paper-authors'>
-                            <strong>Zike Yan</strong>, Yuxin Tian, Xuesong Shi, Ping Guo, Peng Wang, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-                            <a href="./continual-INR/index.html" target="_blank">[Project page]</a>
-                            <a href="https://arxiv.org/abs/2108.05851" target="_blank">[Paper]</a>
-							
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/tro2021.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Line Flow based Simultaneous Localization and Mapping
-                        </div>
-                        <div class='paper-desc'>
-                            IEEE T-RO 2021
-                        </div>
-                        <div class='paper-authors'>
-                            Qiuyuan Wang, <strong>Zike Yan</strong>, Junqiu Wang, Fei Xue, Wei Ma, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-                            <a href="https://ieeexplore.ieee.org/abstract/document/9393474/" target="_blank">[Paper]</a>
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" autoplay controls muted loop playsinline>
-                            <source src="videos/cvpr2021.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Online Learning of a Probabilistic and Adaptive Scene Representation
-                        </div>
-                        <div class='paper-desc'>
-                            CVPR 2021
-                        </div>
-                        <div class='paper-authors'>
-                            <strong>Zike Yan</strong>, Xin Wang, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-                            <a href="https://arxiv.org/abs/2103.16832" target="_blank">[Paper]</a>
-							
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <div>
-                        	<img src='videos/vrih2019.png' class='img-fluid'>
-                    	</div>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Flow-based SLAM: From Geometry Computation to Learning
-                        </div>
-                        <div class='paper-desc'>
-                            Virtual Reality and Intelligent Hardware 2019
-                        </div>
-                        <div class='paper-authors'>
-                            <strong>Zike Yan</strong>, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-                            <a href="https://www.sciencedirect.com/science/article/pii/S2096579619300622" target="_blank">[Paper]</a>
-			
-                        </div>
-                    </div>
-                </div>
-				
-				<div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <div>
-                        	<img src='videos/iccv2019.png' class='img-fluid'>
-                    	</div>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            Local Supports Global: Deep Camera Relocalization with Sequence Enhancement
-                        </div>
-                        <div class='paper-desc'>
-                            ICCV 2019
-                        </div>
-                        <div class='paper-authors'>
-                            Fei Xue, Xin Wang, <strong>Zike Yan</strong>, Qiuyuan Wang, Junqiu Wang, <u>Hongbin Zha</u>
-                        </div>
-                        <div>
-                            <a href="https://arxiv.org/pdf/1908.04391.pdf" target="_blank">[Paper]</a>
-							
-                        </div>
-                    </div>
-                </div>
-
-				
-			<br>
-			<hr>
-			<section>
-        		This webpage template was recycled from <a href='https://www.vincentsitzmann.com/' target="_blank">here</a>.
-    		</section>
+                    I am currently a postdoctoral fellow at Institute for AI Industry Research (AIR) at Tsinghua University, working with Dr. Guyue Zhou and Prof. <a href="https://en.wikipedia.org/wiki/Ya-Qin_Zhang"> Yaqin Zhang</a>.
+                    Prior to that, I obtained my Ph.D Degree from Peking University in 2023, advised by Prof. <span class="text-warning"><a href="http://www.cis.pku.edu.cn/vision/Visual&Robot/people/zha/">Hongbin Zha</a></span>.
+                    <br><br>
+                    My research focus on advancing <b>the construction of spatial memory in agent lifetime.</b> I approach the problem from three aspects: structured and compositional <u>representations</u> with local-global hierarchies; online <u>optimization</u> through continual learning to enforce adaptation to view variations and scene dynamics; a paradigm shift from map-based to map-centric approaches for robot autonomy <u>applications</u>. See <a href="#projects">Projects</a> and <a href="#publications">Publications</a> below.<br><br>
                 
+                </p>
+            </div>
+            <!-- Using FontAwesome Free -->
+            <div class="contact">
+            <!-- style="text-align: center;"> -->
+                <br>
+                <div>
+                    Contacts:
+                    <a target="_blank" href="https://x.com/zike__Yan" class="button icon" style="background-color: rgba(255, 255, 255, 0.2)"> Twitter <i class="fab fa-twitter"></i></a> &nbsp;&nbsp; 
+                    <a target="_blank" href="https://github.com/ZikeYan" class="button icon" style="background-color: rgba(255, 255, 255, 0.2)">Github <i class="fab fa-github"></i></a>  &nbsp;&nbsp; 
+                    <a target="_blank" href="https://scholar.google.com/citations?user=Rawfmp4AAAAJ&hl=en" class="button icon" style="background-color: rgba(255, 255, 255, 0.2);">Google scholar <i class="fa-brands fa-google-scholar"></i></a> &nbsp;&nbsp; 
+                    <a target="_blank" href="mailto:zike.yan@pku.edu.cn" class="button icon" style="background-color: rgba(255, 255, 255, 0.2)">Email <i class="fas fa-envelope"></i></a> 
+                </div>
+            </div>
+
+            <div class="news">
+                <h1>News</h1>
+                <p>
+                    [Jul 2024] Two papers accepted to ECCV 2024!<br>
+                    [Jul 2024] Two papers accepted to IROS 2024!<br>
+                    [May 2024] I served as an Associate Editor at <a href="https://iros2024-abudhabi.org/" target="_blank">IROS 2024</a>.<br>
+                    [Feb 2024] One paper accepted to CVPR 2024!<br>
+                </p>
+            </div>               
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container ">
+        <div class="blog-title" id="projects">
+            <h1>Projects</h1>
+            <div class="project-block">
+                <div class="project-container" id="xplore">
+                    <a href="#xplore">
+                        <div class="project-cover" style="background-color: #DDCECD; background-image: url(assets/figures/eschernet.png)">
+                        </div>
+                    </a>
+    
+                    <div class="project-info">
+                        <h2 class="project-title"><a href="#xplore">Xplore</a><sup> <span class="info" "="">
+                    </h2>
+                        <p class="project-intro">A unified system for goal-oriented exploration, supporting diverse input modalities and map representations.</p>
+                    </div>
+                </div> 
+                <div class="project-container" id="rsr">
+                    <a href="#rsr">
+                        <div class="project-cover" style="background-color: #E2a3a3; background-image: url(assets/figures/prismer.png)">
+                        </div>
+                    </a>
+    
+                    <div class="project-info">
+                        <h2 class="project-title"><a href="#rsr">Real2Sim2Real</a><sup> <span class="info" "="">
+                    </span></sup></h2>
+                        <p class="project-intro">Creating realistic (visually and physically) simulation environment from real-world data to narrow the sim2real gap.</p>
+                    </div>
+                </div>  
+
+                <div class="project-container" id="lifelong">
+                    <a href="#lifelong">
+                        <div class="project-cover" style="background-color: rgba(254, 223, 225, 1.0); background-image: url(assets/figures/reco.png)">
+                        </div>
+                    </a>
+    
+                    <div class="project-info">
+                        <h2 class="project-title"><a href="#lifelong">Lifelong mapping</a></h2>
+                        <p class="project-intro">Evolutionary map construction that adapts to scene dynamics and task variations over time.</p>
+                    </div>
+                </div> 
+
+                <div class="project-container" id="oracle">
+                    <a href="#oracle">
+                        <div class="project-cover" style="background-color: #F0C27B; background-image: url(assets/figures/auto-lambda.png)">
+                        </div>
+                    </a>
+    
+                    <div class="project-info">
+                        <h2 class="project-title"><a href="#oracle">Oracle</a> </h2>
+                        <p class="project-intro">Understanding the generalization, memorization, and training dynamics in machine learning.</p>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Publication Section -->
+
+    <div class="container">
+        <div class="blog-title" id="publications">
+            <h1>Selected Publications <a target="_blank" href="https://scholar.google.com/citations?user=Rawfmp4AAAAJ&hl=en"><sup>[Full list]</sup></a></h1>
+        </div>
+        
+        <div class="paper-page">
+            <hr class="hard">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p>ECCV 2024 &nbsp; <a href="#lifelong"><sup>[Project: Lifelong mapping]</sup></a></p> 
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Learn to Memorize and to Forget: A Continual Learning Perspective of Dynamic SLAM
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://arxiv.org/pdf/2407.13338"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Baicheng Li, <b>Zike Yan<sup>&dagger;</sup></b>, Dong Wu, Hanqing Jiang, Hongbin Zha<sup>&dagger;</sup>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p>ECCV 2024 &nbsp; <a href="#rsr"><sup>[Project: Real2Sim2Real]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Structured-NeRF: Hierarchical Scene Graph with Neural Representation
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05154.pdf"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Zhide Zhong<sup>*</sup>, Jiakai Cao<sup>*</sup>, Songen Gu, Sirui Xie, Liyi Luo, Hao Zhao, Guyue Zhou, Haoang Li, <b>Zike Yan<sup>&dagger;</sup></b>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p>IROS 2024 &nbsp; <a href="#xplore"><sup>[Project: Xplore]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Active Neural Mapping at Scale
+                        <a target="_blank" href="https://github.com/kzj18/activeINR-S"> <sup>[Project page]</sup></a>
+                        <a target="_blank" href="https://arxiv.org/abs/2409.20276"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Zijia Kuang, <b>Zike Yan<sup>&dagger;</sup></b>, Hao Zhao, Guyue Zhou, Hongbin Zha
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p> CVPR 2024 &nbsp; <a href="#rsr"><sup>[Project: Real2Sim2Real]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        PanoRecon: Real-Time Panoptic 3D Reconstruction from Monocular Video
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wu_PanoRecon_Real-Time_Panoptic_3D_Reconstruction_from_Monocular_Video_CVPR_2024_paper.pdf"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Dong Wu, <b>Zike Yan</b>, Hongbin Zha
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p> ICCV 2023 &nbsp; <a href="#xplore"><sup>[Project: Xplore</sup></a><a href="#oracle"><sup>, Oracle]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Active Neural Mapping
+                        <a target="_blank" href="active-INR/index.html"> <sup>[Project page]</sup></a>
+                        <a target="_blank" href="https://arxiv.org/abs/2308.16246"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        <b>Zike Yan</b>, Haoxiang Yang, Hongbin Zha
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p> CICAI 2023 &nbsp;&nbsp; <sup>[Best Paper Runner-up, </sup><a href="#rsr"><sup>Project: Real2Sim2Real]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        MARS: An Instance-aware, Modular and Realistic Simulator for Autonomous Driving
+                        <a target="_blank" href="https://open-air-sun.github.io/mars/"> <sup>[Project page]</sup></a>
+                        <a target="_blank" href="https://arxiv.org/abs/2307.15058"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Many authors
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p> IEEE RA-L 2022 &nbsp; <a href="#xplore"><sup>[Project: Xplore]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Visual-Inertial Odometry based on Kinematic Constraints in IMU Frames
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9770379/"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Xin Wang, Yuqi Pan, <b>Zike Yan</b>, Hongbin Zha
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p> ICCV 2021 &nbsp;&nbsp; <a href="#lifelong"><sup>[Project: Lifelong mapping]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Continual Neural Mapping: Learning an Implicit Scene Representation from Sequential Observations
+                        <a target="_blank" href="./continual-INR/index.html"> <sup>[Project page]</sup></a>
+                        <a target="_blank" href="https://arxiv.org/abs/2108.05851"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        <b>Zike Yan</b>, Yuxin Tian, Xuesong Shi, Ping Guo, Peng Wang, Hongbin Zha
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p> IEEE T-RO 2021 &nbsp; <a href="#xplore"><sup>[Project: Xplore]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Line Flow based Simultaneous Localization and Mapping
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9393474/"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Qiuyuan Wang, <b>Zike Yan</b>, Junqiu Wang, Fei Xue, Wei Ma, Hongbin Zha
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p> CVPR 2021 &nbsp; <a href="#lifelong"><sup>[Project: Lifelong mapping]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Online Learning of a Probabilistic and Adaptive Scene Representation
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://arxiv.org/abs/2103.16832"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        <b>Zike Yan</b>, Xin Wang, Hongbin Zha
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+            <div class="paper-container">
+                <div class="paper-conference">
+                    <p> Virtual Reality and Intelligent Hardware 2019</p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Flow-based SLAM: From Geometry Computation to Learning
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S2096579619300622"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        <b>Zike Yan</b>, Hongbin Zha
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <div class="blog-title" id="about">
+            <h1>About</h1>
+        </div>
+        <hr class="hard">
+        <h2>Services</h2>
+        <div>
+            <p>
+                <b>Reviewer:</b> CVPR, ICCV, ECCV, ICLR, ICRA, IROS, 3DV, IJCV, TVCG, TIV, RA-L.<br>
+                <b>Associate Editor:</b> IROS2024.
+            </p>
+        </div>
+        <hr class="soft">
+        <h2>Other Things</h2>
+        <div>
+            <ul>
+                <li>My given name, Zike (子轲 /zɪkə/), is inspired by two great Chinese philosophers: <a target="_blank" href="https://en.wikipedia.org/wiki/Confucius">Confucius</a> and <a target="_blank" href="https://en.wikipedia.org/wiki/Mencius">Mencius</a>. I am the 84th generation of the Yan family (颜 /yɛn/), which traces its origins to <a href="https://en.wikipedia.org/wiki/Yan_Hui">Yan Hui</a>, a renowned disciple of Confucius.</li>
+                <li>I used to aspire to be a generalist, embracing diverse life experiences. I've participated in the fitness competition (final round), motorcycle gymkhana (champion of the restricted class), acappella choir (as a bass), and the college basketball team (as a pointgard). As a person, I am quite familiar with domain adaptation (and catastrophic forgetting).</li>
+                <li>I value visual appeal. I used to take photos and make videos (as my spatiotemporal memory). My favorite artists are <a target="_blank" href="https://elliot-lim.com/">Elliot Lim</a>, <a target="_blank" href="https://gioacchinopetronicce.com/portfolio/films/">Gioacchino Petronicce</a>, <a target="_blank" href="https://khyzylsaleem.artstation.com/">Khyzyl Saleem</a>.</li>
+                <li>I am a petrolhead and a wildlifer. I enjoy solo trips (during the conferences).</li>
+                <a href="javascript:toggleblock(&#39;hidden_info&#39;)" id="toggleButton">---- Show more ----</a>
+                <div id="hidden_info" style="display: none;">
+                    <li>I am looking for potential collaborations in areas where I have limited expertise, including: <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/092188909500004Y">lifelong/generalizable robot learning</a>, <a target="_blank", href="https://wijmans.xyz/publication/eom/">the emergence phenomenon in learned networks</a>, <a target="_blank", href="https://arxiv.org/pdf/2307.04345">continual learning as computationally-constrained RL</a>, and <a target="_blank" href="https://arxiv.org/abs/2402.00396">exploration for LLMs</a>. Feel free to reach out! </li>
+                </div>  
+            </ul>
+            <p>
 
-    <div id='footer' class='vspace-top'>
-    <div>
+            </p>
+        </div>
+    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Footer Page -->
+    <footer>
+        <div class="container">
+            <p>
+                This website is built on the <a target="_blank" href="https://shikun.io/projects/clarity">Clarity Template</a>, designed by <a target="_blank" href="https://shikun.io/">Shikun Liu</a>.
+            </p>
+        </div>    
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="clarity/clarity.js"></script>    
+    <script src="assets/scripts/main.js"></script>    
+    </html>
 </body>
-
-</html>
