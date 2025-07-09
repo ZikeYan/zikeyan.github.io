@@ -50,7 +50,7 @@
             <div class="nav-container slide-in first" id="slider">
                 <div class="menu">
                         <a href="#" onclick="toggle()">Home</a>
-                        <a href="#projects" onclick="toggle()">Projects</a>
+                        <a href="#projects" onclick="toggle()">Research</a>
                         <a href="#publications" onclick="toggle()">Publications</a>
                         <a href="#about" onclick="toggle()">About</a>
                 </div>
@@ -69,36 +69,23 @@
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener('load', function() {
-            var navContainer = document.querySelector('div.nav-bar');
-            var blogTitles = document.querySelectorAll('div.blog-title');
-            var news = document.querySelector('div.news');
-            var navHeight = navContainer.offsetHeight;
     
-            blogTitles.forEach(function(blogTitle) {
-                blogTitle.style.paddingTop = navHeight + 'px';
-            });
-            news.style.paddingBottom = 0.3*navHeight + 'px';
-        });
-    </script>
     <!-- Introduction Page -->
     <div class="container">
         <div class="blog-title"  id="intro">
             <h1>Zike Yan (颜子轲)</h1>
             <div class="blog-intro">
-                <p><img class="profile-picture" src="./assets/figures/portrait.jpg"></p>
+                <div><img class="profile-picture" src="./assets/figures/portrait.jpg"></div>
                 <p>
-                    I am currently a postdoctoral fellow at Institute for AI Industry Research (AIR) at Tsinghua University, working with Dr. Guyue Zhou and Prof. <a href="https://en.wikipedia.org/wiki/Ya-Qin_Zhang"> Yaqin Zhang</a>.
+                    I am currently a postdoctoral fellow at Institute for AI Industry Research (AIR), Tsinghua University, working with Prof. <a href="https://air.tsinghua.edu.cn/en/info/1046/1196.htm">Guyue Zhou</a> and Prof. <a href="https://en.wikipedia.org/wiki/Ya-Qin_Zhang"> Ya-Qin Zhang</a>.
                     Prior to that, I obtained my Ph.D Degree from Peking University in 2023, advised by Prof. <span class="text-warning"><a href="http://www.cis.pku.edu.cn/vision/Visual&Robot/people/zha/">Hongbin Zha</a></span>.
                     <br><br>
-                    My research focus on advancing <b>the construction of spatial memory in agent lifetime.</b> I approach the problem from three aspects: structured and compositional <u>representations</u> with local-global hierarchies; online <u>optimization</u> through continual learning to enforce adaptation to view variations and scene dynamics; a paradigm shift from map-based to map-centric approaches for robot autonomy <u>applications</u>. See <a href="#projects">Projects</a> and <a href="#publications">Publications</a> below.<br><br>
+                    My research is driven by the long-term goal of developing perceptually and physically <b>adaptive intelligence</b> for mobile agents deployed over extended periods. I believe that active learning through live interactions with the environment is the key to scaling such intelligence with unending streaming data, provided that the system can adapt safely and efficiently. I focus on <u>vision-based adaptive systems through continual learning,</u> mainly for dense reconstruction and exploration, with recent extensions to robotic manipulation and locomotion. My primary interest is balancing continual adaptation and knowledge retention. This involves developing suitable representations and optimization strategies to meet the real-time constraints of diverse robotic tasks. A summary of my previous work can be found in the <a href="#projects">Research Summary</a> and <a href="#publications">Publications</a>.<br><br>
                 
                 </p>
             </div>
             <!-- Using FontAwesome Free -->
             <div class="contact">
-            <!-- style="text-align: center;"> -->
                 <br>
                 <div>
                     Contacts:
@@ -112,6 +99,11 @@
             <div class="news">
                 <h1>News</h1>
                 <p>
+					[June 2025] Two papers accepted to ICCV 2025!<br>
+					[June 2025] <a target="_blank" href="https://air-discoverse.github.io/"> DISCOVERSE</a> accepted to IROS 2025!<br>
+					[May 2025] <a target="_blank" href="https://li-yuetao.github.io/ActiveSplat/"> ActiveSplat</a> accepted to RA-L!<br>
+					[May 2025] I was recognized as a <a href="https://cvpr.thecvf.com/Conferences/2025/ProgramCommittee#all-outstanding-reviewer"  target="_blank">CVPR2025</a> Outstanding Reviewer!<br>
+					[May 2025] I served as an Associate Editor at <a href="https://www.iros25.org/" target="_blank">IROS 2025</a>.<br>
                     [Jul 2024] Two papers accepted to ECCV 2024!<br>
                     [Jul 2024] Two papers accepted to IROS 2024!<br>
                     [May 2024] I served as an Associate Editor at <a href="https://iros2024-abudhabi.org/" target="_blank">IROS 2024</a>.<br>
@@ -120,64 +112,85 @@
             </div>               
         </div>
     </div>
+	
 
     <!-- Projects -->
     <div class="container ">
         <div class="blog-title" id="projects">
-            <h1>Projects</h1>
-            <div class="project-block">
-                <div class="project-container" id="xplore">
-                    <a href="#xplore">
-                        <div class="project-cover" style="background-color: #DDCECD; background-image: url(assets/figures/eschernet.png)">
-                        </div>
-                    </a>
-    
-                    <div class="project-info">
-                        <h2 class="project-title"><a href="#xplore">Xplore</a><sup> <span class="info" "="">
-                    </h2>
-                        <p class="project-intro">A unified system for goal-oriented exploration, supporting diverse input modalities and map representations.</p>
-                    </div>
-                </div> 
-                <div class="project-container" id="rsr">
-                    <a href="#rsr">
-                        <div class="project-cover" style="background-color: #E2a3a3; background-image: url(assets/figures/prismer.png)">
-                        </div>
-                    </a>
-    
-                    <div class="project-info">
-                        <h2 class="project-title"><a href="#rsr">Real2Sim2Real</a><sup> <span class="info" "="">
-                    </span></sup></h2>
-                        <p class="project-intro">Creating realistic (visually and physically) simulation environment from real-world data to narrow the sim2real gap.</p>
-                    </div>
-                </div>  
-
-                <div class="project-container" id="lifelong">
-                    <a href="#lifelong">
-                        <div class="project-cover" style="background-color: rgba(254, 223, 225, 1.0); background-image: url(assets/figures/reco.png)">
-                        </div>
-                    </a>
-    
-                    <div class="project-info">
-                        <h2 class="project-title"><a href="#lifelong">Lifelong mapping</a></h2>
-                        <p class="project-intro">Evolutionary map construction that adapts to scene dynamics and task variations over time.</p>
-                    </div>
-                </div> 
-
-                <div class="project-container" id="oracle">
-                    <a href="#oracle">
-                        <div class="project-cover" style="background-color: #F0C27B; background-image: url(assets/figures/auto-lambda.png)">
-                        </div>
-                    </a>
-    
-                    <div class="project-info">
-                        <h2 class="project-title"><a href="#oracle">Oracle</a> </h2>
-                        <p class="project-intro">Understanding the generalization, memorization, and training dynamics in machine learning.</p>
-                    </div>
-                </div> 
-
-            </div>
+            <h1>Research Summary</h1>
+			<p>
+				In the short term, my target systems can be summarized into three projects, which constitute the core focus of most of my publications. I envision these projects as three progressive phases toward achieving adaptive intelligence in robotic navigation, manipulation, and locomotion. The first phase, namely <b>LiveMimic</b>, seeks human-in-the-loop policy training to accelerate the pre-training stage with convenient in-distribution human demonstrations; The second phase aims to improve the policy generalization through realistic simulation (or a learned world model that predicts future state conditioned on action commands), namely <b>ByteYard</b>, thereby narrowing sim-to-real gap with safe post-training via trial-and-error; The final stage, namely <b>Xplore</b>, aims to promote autonomous and active refinement of deployed policies for test-time adaptation. My personal interest lies in studying the exploration-exploitation tradeoff within the neural network energy landscape, focusing on appropriate representations and corresponding optimization strategies to balance exploration efficiency and knowledge coverage in practice.
+            </p>
+			<br>
+			<section class="overview" id="overview">
+			  <div class="main thick">
+				<b>Online dense reconstruction</b>
+				<p>What is the right representation for compressing the streaming data?</p>
+				<p>How to achieve a balance between efficient adaptation and long-lasting memorization?</p>
+				<p><a href="javascript:$('#overview-reconstruction .content').slideToggle();">Show/Hide Work on Online Dense Reconstruction</a></p>
+			  </div>
+			  <ul class="row" id="overview-reconstruction">
+				<li class="page stretch join down">
+				  <div class="thin">
+					<b>Representations</b>
+					<ul class="content hide">
+					  <li><i>Flexible Gaussian primitives</i>: <br /><a target="_blank" href="https://arxiv.org/abs/2103.16832/">[CVPR2021]</a><a target="_blank" href="https://li-yuetao.github.io/ActiveSplat/">[RA-L2025]</a></li>
+					  <li><i>Compact neural representations</i>: <br /><a target="_blank" href="./continual-INR/index.html">[ICCV2021]</a><a target="_blank" href="./active-INR/index.html">[ICCV2023]</a></li>
+					  <li class="level-2">+ <i>Object-decomposed structure</i>: <br /><a target="_blank" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05154.pdf">[ECCV2024]</a><a target="_blank" href="https://air-discoverse.github.io/">[IROS2025]</a></li>
+					</ul>
+				  </div>
+				</li>
+				<li class="page stretch join down">
+				  <div class="thin">
+					<b>Optimization Strategies</b>
+					<ul class="content hide">
+					  <li><i>Online Bayesian learning</i>: <br /><a target="_blank" href="https://arxiv.org/abs/2103.16832/">[CVPR2021]</a></li>
+					  <li><i>Experience replay</i>: <br /><a target="_blank" href="./continual-INR/index.html">[ICCV2021]</a></li>
+					  <li class="level-2">+  <i>Generalization-forgetting trade-offs</i>: <br /><a target="_blank" href="./active-INR/index.html">[ICCV2023]</a> <a target="_blank" href="https://github.com/kzj18/activeINR-S">[IROS2024]</a></li>
+					  <li class="level-2">+ <i>Learn to memorize and to forget</i>: <br /><a target="_blank" href="https://arxiv.org/pdf/2407.13338">[ECCV2024]</a></li>
+					</ul>
+				  </div>
+				</li>
+			  </ul>
+			  <br>
+			  <div class="main thick">
+				<b>Active perception and learning for robotic applications</b>
+				<p>How can the robot efficiently learn and adapt the skills from natural supervisions?</p>
+				<p>How can the digitalized 3D information be exploited for goal-oriented task execution?</p>
+				<p><a href="javascript:$('#overview-robotics .content').slideToggle();">Show/Hide Work on Adaptive Robotic Systems</a></p>
+			  </div>
+			  <ul class="row" id="overview-robotics">
+				<li class="page join down">
+				  <div class="thin">
+					<b>State Estimation</b>
+					<ul class="content hide">
+					  <li><i>Dynamic SLAM</i>: <br /><a target="_blank" href="https://arxiv.org/pdf/2407.13338">[ECCV2024]</a></li>
+					  <li class="level-2">+ <i>Object decomposition and pose estimation</i>: <br /><a target="_blank" href="">[ICCV2025]</a></li>
+					</ul>
+				  </div>
+				</li>
+				<li class="page join down">
+				  <div class="thin">
+					<b>Autonomous Exploration</b>
+					<ul class="content hide">
+					  <li><i>From the optimization perspective</i>: <br /><a target="_blank" href="./active-INR/index.html">[ICCV2023]</a></li>
+					  <li class="level-2">+ <i>Graph-based planning</i>: <br /><a target="_blank" href="https://github.com/kzj18/activeINR-S">[IROS2024]</a></li>
+					  <li class="level-2">+ <i>Efficient Gaussian splatting &amp; hierarchical planning</i>: <br /><a target="_blank" href="https://li-yuetao.github.io/ActiveSplat/">[RA-L2025]</a></li>
+					</ul>
+				  </div>
+				</li>
+				<li class="page join down">
+				  <div class="thin">
+					<b>Manipulation</b>
+					<ul class="content hide">
+					  <li><i>Realistic simulation for manipulation</i>:  <br /><a target="_blank" href="https://air-discoverse.github.io/">[IROS2025]</a></li>
+					  <li class="level-2">+ <i>Real2sim2real via differentiable simulation </i>: <a target="_blank" href="https://arxiv.org/abs/2503.10118">[Arxiv2025]</a></li>
+					</ul>
+				  </div>
+				</li>
+			  </ul>
+			</section>
         </div>
-        
     </div>
 
     <!-- Publication Section -->
@@ -189,9 +202,71 @@
         
         <div class="paper-page">
             <hr class="hard">
+			<div class="paper-container">
+                <div class="paper-conference">
+                    <p>ICCV 2025 &nbsp; <a href="#projects"><sup>[Project: LiveMimic</sup></a> <a href="#projects"><sup> ByteYard]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        Proactive Scene Decomposition and Reconstruction
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+<!--
+                        <a target="_blank" href="/"> <sup>[Project page]</sup></a> 
+						<a target="_blank" href=""> <sup>[Paper]</sup></a> 
+-->
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Baicheng Li, <b>Zike Yan<sup>&dagger;</sup></b>, Dong Wu, Hongbin Zha<sup>&dagger;</sup>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">
+			<div class="paper-container">
+                <div class="paper-conference">
+                    <p>IROS 2025 &nbsp; <a href="#projects"><sup>[Project: ByteYard]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        DISCOVERSE: Efficient Robot Simulation in Complex High-Fidelity Environments
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://air-discoverse.github.io/"> <sup>[Project page]</sup></a> 
+						<a target="_blank" href="https://drive.google.com/file/d/1pG8N2qBdLuqj8_wylTYgsXYGOKMhwKXB/view"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Many authors
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">	
+			<div class="paper-container">
+                <div class="paper-conference">
+                    <p>IEEE RA-L 2025 &nbsp; <a href="#projects"><sup>[Project: Xplore]</sup></a></p>
+                </div>
+
+                <div class="paper-info">
+                    <p>
+                        ActiveSplat: High-Fidelity Scene Reconstruction through Active Gaussian Splatting
+                        <!-- <a target="_blank" href="#"> <sup>[Project page]</sup></a> -->
+                        <a target="_blank" href="https://li-yuetao.github.io/ActiveSplat/"> <sup>[Project page]</sup></a> 
+						<a target="_blank" href="https://arxiv.org/abs/2410.21955"> <sup>[Paper]</sup></a> 
+                        <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
+                    </p>
+                    <p>
+                        Yuetao Li<sup>*</sup>, Zijia Kuang<sup>*</sup>, Ting Li, <b>Zike Yan<sup>&dagger;</sup></b>, Guyue Zhou, Shaohui Zhang<sup>&dagger;</sup>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="soft">			
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p>ECCV 2024 &nbsp; <a href="#lifelong"><sup>[Project: Lifelong mapping]</sup></a></p> 
+                    <p>ECCV 2024 &nbsp; <a href="#projects"><sup>[Project: Xplore]</sup></a></p> 
                 </div>
 
                 <div class="paper-info">
@@ -210,7 +285,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p>ECCV 2024 &nbsp; <a href="#rsr"><sup>[Project: Real2Sim2Real]</sup></a></p>
+                    <p>ECCV 2024 &nbsp; <a href="#projects"><sup>[Project: ByteYard]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -229,7 +304,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p>IROS 2024 &nbsp; <a href="#xplore"><sup>[Project: Xplore]</sup></a></p>
+                    <p>IROS 2024 &nbsp; <a href="#projects"><sup>[Project: Xplore]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -248,7 +323,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p> CVPR 2024 &nbsp; <a href="#rsr"><sup>[Project: Real2Sim2Real]</sup></a></p>
+                    <p> CVPR 2024 &nbsp; <a href="#projects"><sup>[Project: ByteYard]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -267,7 +342,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p> ICCV 2023 &nbsp; <a href="#xplore"><sup>[Project: Xplore</sup></a><a href="#oracle"><sup>, Oracle]</sup></a></p>
+                    <p> ICCV 2023 &nbsp; <a href="#projects"><sup>[Project: Xplore]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -286,7 +361,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p> CICAI 2023 &nbsp;&nbsp; <sup>[Best Paper Runner-up, </sup><a href="#rsr"><sup>Project: Real2Sim2Real]</sup></a></p>
+                    <p> CICAI 2023 &nbsp;&nbsp; <sup>[Best Paper Runner-up, </sup><a href="#projects"><sup>Project: ByteYard]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -305,7 +380,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p> IEEE RA-L 2022 &nbsp; <a href="#xplore"><sup>[Project: Xplore]</sup></a></p>
+                    <p> IEEE RA-L 2022 &nbsp; <a href="#projects"><sup>[Project: LiveMimic]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -316,7 +391,7 @@
                         <!-- <a href="_blank"> <sup>[Code]</sup> </a> -->
                     </p>
                     <p>
-                        Xin Wang, Yuqi Pan, <b>Zike Yan</b>, Hongbin Zha
+                        Xin Wang, Youqi Pan, <b>Zike Yan</b>, Hongbin Zha
                     </p>
                 </div>
             </div>
@@ -324,7 +399,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p> ICCV 2021 &nbsp;&nbsp; <a href="#lifelong"><sup>[Project: Lifelong mapping]</sup></a></p>
+                    <p> ICCV 2021 &nbsp;&nbsp; <a href="#projects"><sup>[Project: Xplore]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -343,7 +418,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p> IEEE T-RO 2021 &nbsp; <a href="#xplore"><sup>[Project: Xplore]</sup></a></p>
+                    <p> IEEE T-RO 2021 &nbsp; <a href="#projects"><sup>[Project: LiveMimic]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -362,7 +437,7 @@
             <hr class="soft">
             <div class="paper-container">
                 <div class="paper-conference">
-                    <p> CVPR 2021 &nbsp; <a href="#lifelong"><sup>[Project: Lifelong mapping]</sup></a></p>
+                    <p> CVPR 2021 &nbsp; <a href="#projects"><sup>[Project: Xplore]</sup></a></p>
                 </div>
 
                 <div class="paper-info">
@@ -407,8 +482,8 @@
         <h2>Services</h2>
         <div>
             <p>
-                <b>Reviewer:</b> CVPR, ICCV, ECCV, ICLR, ICRA, IROS, 3DV, IJCV, TVCG, TIV, RA-L.<br>
-                <b>Associate Editor:</b> IROS2024.
+                <b>Reviewer:</b> CVPR, ICCV, ECCV, ICLR, NeurIPS, ICRA, IROS, CoRL, 3DV, ACMMM, IJCV, T-VCG, T-IV, RA-L.<br>
+                <b>Associate Editor:</b> IROS2024, IROS2025.
             </p>
         </div>
         <hr class="soft">
@@ -416,13 +491,12 @@
         <div>
             <ul>
                 <li>My given name, Zike (子轲 /zɪkə/), is inspired by two great Chinese philosophers: <a target="_blank" href="https://en.wikipedia.org/wiki/Confucius">Confucius</a> and <a target="_blank" href="https://en.wikipedia.org/wiki/Mencius">Mencius</a>. I am the 84th generation of the Yan family (颜 /yɛn/), which traces its origins to <a href="https://en.wikipedia.org/wiki/Yan_Hui">Yan Hui</a>, a renowned disciple of Confucius.</li>
-                <li>I used to aspire to be a generalist, embracing diverse life experiences. I've participated in the fitness competition (final round), motorcycle gymkhana (champion of the restricted class), acappella choir (as a bass), and the college basketball team (as a pointgard). As a person, I am quite familiar with domain adaptation (and catastrophic forgetting).</li>
-                <li>I value visual appeal. I used to take photos and make videos (as my spatiotemporal memory). My favorite artists are <a target="_blank" href="https://elliot-lim.com/">Elliot Lim</a>, <a target="_blank" href="https://gioacchinopetronicce.com/portfolio/films/">Gioacchino Petronicce</a>, <a target="_blank" href="https://khyzylsaleem.artstation.com/">Khyzyl Saleem</a>.</li>
                 <li>I am a petrolhead and a wildlifer. I enjoy solo trips (during the conferences).</li>
-                <a href="javascript:toggleblock(&#39;hidden_info&#39;)" id="toggleButton">---- Show more ----</a>
+                <li>I am looking for potential collaborations in areas where I have limited expertise, including: <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/092188909500004Y">lifelong/generalizable robot learning</a>, <a target="_blank", href="https://wijmans.xyz/publication/eom/">the emergence phenomenon in learned networks</a>, <a target="_blank", href="https://arxiv.org/pdf/2307.04345">continual learning as computationally-constrained RL</a>, and <a target="_blank" href="https://arxiv.org/abs/2402.00396">exploration for LLMs</a>. Feel free to reach out! </li>
+                <!-- <a href="javascript:toggleblock(&#39;hidden_info&#39;)" id="toggleButton">---- Show more ----</a>
                 <div id="hidden_info" style="display: none;">
                     <li>I am looking for potential collaborations in areas where I have limited expertise, including: <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/092188909500004Y">lifelong/generalizable robot learning</a>, <a target="_blank", href="https://wijmans.xyz/publication/eom/">the emergence phenomenon in learned networks</a>, <a target="_blank", href="https://arxiv.org/pdf/2307.04345">continual learning as computationally-constrained RL</a>, and <a target="_blank" href="https://arxiv.org/abs/2402.00396">exploration for LLMs</a>. Feel free to reach out! </li>
-                </div>  
+                </div>   -->
             </ul>
             <p>
 
@@ -439,11 +513,22 @@
             </p>
         </div>    
     </footer>
+    <script>
+        window.addEventListener('load', function() {
+            var navContainer = document.querySelector('div.nav-bar');
+            var blogTitles = document.querySelectorAll('div.blog-title');
+            var news = document.querySelector('div.news');
+            var navHeight = navContainer.offsetHeight;
     
-
+            blogTitles.forEach(function(blogTitle) {
+                blogTitle.style.paddingTop = navHeight + 'px';
+            });
+            news.style.paddingBottom = 0.3*navHeight + 'px';
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="clarity/clarity.js"></script>    
     <script src="assets/scripts/main.js"></script>    
-    </html>
 </body>
+</html>
